@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sasa10.mljac.aktivnosti.ActivitiDodajObrok"
+    tools:showIn="@layout/activity_activiti_dodaj_obrok"
+    android:background="@drawable/ic_pozadina">
+
+
+    <EditText
+        android:id="@+id/nazivEdit"
+        android:background="@drawable/conteiner"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Title"
+        android:layout_marginTop="105dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/add_email"
+            app:fab_colorNormal="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_email"
+
+
+            app:fab_label="Email"
+            android:layout_alignTop="@+id/add_done"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/add_sms"
+            app:fab_colorNormal="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sms"
+
+            app:fab_label="SMS"
+            android:layout_alignTop="@+id/add_done"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="44dp"
+            android:layout_marginEnd="44dp" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/add_done"
+            app:fab_colorNormal="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+
+            app:fab_label="DONE!"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/receptEdit"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/receptEdit"
+        android:background="@drawable/conteiner"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:inputType="textMultiLine"
+        android:hint="Recipe"
+        android:gravity="top"
+
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/nazivEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view1"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+
+        app:lottie_fileName="mljac.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

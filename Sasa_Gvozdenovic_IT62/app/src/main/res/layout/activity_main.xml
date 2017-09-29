@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    tools:context="com.example.sasa10.mljac.aktivnosti.MainActivity"
+    android:background="@drawable/ic_pozadina">
+
+
+    <GridView
+        android:divider="@null"
+        android:dividerHeight="3dp"
+        android:id="@+id/listViewObroci"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+
+        app:lottie_fileName="mljac.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+
+
+
+
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu_fab_size="normal"
+        app:menu_showShadow="true"
+        app:menu_shadowColor="#66000000"
+        app:menu_shadowRadius="4dp"
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="3dp"
+        app:menu_colorNormal="@color/colorPrimary"
+        app:menu_colorPressed="#7bbbdf"
+        app:menu_colorRipple="#99FFFFFF"
+        app:menu_animationDelayPerItem="50"
+        app:menu_icon="@drawable/fab_add"
+        app:menu_buttonSpacing="0dp"
+        app:menu_labels_margin="0dp"
+        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:menu_labels_paddingTop="4dp"
+        app:menu_labels_paddingRight="8dp"
+        app:menu_labels_paddingBottom="4dp"
+        app:menu_labels_paddingLeft="8dp"
+        app:menu_labels_padding="8dp"
+        app:menu_labels_textColor="#FFFFFF"
+        app:menu_labels_textSize="14sp"
+        app:menu_labels_cornerRadius="3dp"
+        app:menu_labels_colorNormal="#333333"
+        app:menu_labels_colorPressed="#444444"
+        app:menu_labels_colorRipple="#66FFFFFF"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_singleLine="false"
+        app:menu_labels_ellipsize="none"
+        app:menu_labels_maxLines="-1"
+        app:menu_labels_position="left"
+        app:menu_openDirection="up"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_fab_label=""
+        app:menu_fab_show_animation="@anim/fab_scale_up"
+        app:menu_fab_hide_animation="@anim/fab_scale_down"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/menu_item1"
+        app:fab_colorNormal="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_info"
+
+        app:fab_size="mini"
+        app:fab_label="About" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/youtube"
+            app:fab_colorNormal="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_youtube"
+            app:fab_size="mini"
+            app:fab_label="YouTube"
+            />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/menu_item"
+        app:fab_colorNormal="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fab_add"
+        app:fab_size="mini"
+        app:fab_label="Add recipe"
+        />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+    <TextView
+        android:id="@+id/textViewNaslovPocetak"
+        android:layout_width="wrap_content"
+
+        android:textColor="#000"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Empty list = Empty stomach!"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/textViewPodnaslov"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:id="@+id/textViewPodnaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add some recipes of delicious food!"
+        android:layout_marginBottom="22dp"
+        android:layout_alignBottom="@+id/animation_view"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
